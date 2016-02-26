@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="menu" unicode="&#xe800;" d="m53 745l0 52 1263 0 0-52-1263 0z m0-421l0 52 1263 0 0-52-1263 0z m0-421l0 52 1263 0 0-52-1263 0z" horiz-adv-x="1368" />
+<glyph glyph-name="team-select" unicode="&#xe801;" d="m526 745l0 52 632 0 0-52-632 0 0 0z m0-421l0 52 632 0 0-52-632 0 0 0z m0-421l0 52 632 0 0-52-632 0 0 0z m-473 842l0 52 210 0 0-52-210 0 0 0z m0-421l0 52 210 0 0-52-210 0 0 0z m0-421l0 52 210 0 0-52-210 0 0 0z" horiz-adv-x="1211" />
+<glyph glyph-name="x" unicode="&#xe802;" d="m250 211l511 511m-511 0l511-511" horiz-adv-x="1056" />
+</font>
+</defs>
+</svg>

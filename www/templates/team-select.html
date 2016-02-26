@@ -1,0 +1,14 @@
+<ion-popover-view class="team-select">
+  <ion-header-bar>
+    <h5 class="team-select__title">Choose your teams (max 4)</h5>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list">
+      <a class="item item-avatar team-select__team" href="#" ng-repeat="team in teams" on-tap="toggleTeam(team.id)"
+         ng-class="{'team-select__team_active':(userTeams.indexOf(team.id) !== -1)}">
+        <img ng-src="img/flags/{{team.flag}}">
+        <h2 ng-bind="team.title"></h2>
+      </a>
+    </div>
+  </ion-content>
+</ion-popover-view>

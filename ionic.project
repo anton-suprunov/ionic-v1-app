@@ -1,0 +1,12 @@
+{
+  "name": "sfchampionship",
+  "app_id": "2fc8ff30",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

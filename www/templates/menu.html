@@ -1,0 +1,41 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <ion-side-menu side="left">
+    <ion-header-bar>
+      <span class="sf-icon-x menu__close"></span>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close href="#/app/my-teams">
+          My Teams
+        </ion-item>
+        <ion-item menu-close href="#/app/all-teams">
+          All Teams
+        </ion-item>
+        <ion-item menu-close href="#/app/more">
+          More sites and apps
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+  <ion-side-menu-content>
+    <ion-nav-bar>
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-title>
+        <span class="logo"></span>
+      </ion-nav-title>
+
+      <ion-nav-buttons side="left">
+        <a href="#" class="sf-icon sf-icon-menu" menu-toggle="left"></a>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <a class="sf-icon sf-icon-team-select" on-tap="app.showTeamSelect($event)"></a>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-nav-view name="menuContent"></ion-nav-view>
+
+  </ion-side-menu-content>
+
+</ion-side-menus>

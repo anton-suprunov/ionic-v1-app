@@ -1,0 +1,31 @@
+body {
+  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial;
+}
+
+.logo {
+  background-image: url(../img/logo.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 6px auto 0;
+
+  @include retina(2x) {
+    background-image: url(../img/logo@2x.png);
+  }
+  @include retina(3x) {
+    background-image: url(../img/logo@3x.png);
+  }
+}
+
+.title-bar {
+  height: 30px;
+  background-color: #222;
+  line-height: 30px;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  margin: 3px 0 0;
+}

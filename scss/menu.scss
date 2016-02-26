@@ -1,0 +1,40 @@
+.menu.menu-left {
+  background-color: #1c2b36;
+  background-image: url(../img/nav-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu .bar-header { background: transparent }
+
+.menu .item {
+  background-color: transparent;
+  border-color: #1c374a;
+
+  .item-content {
+    background-color: transparent;
+    color: #17a3ef;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 59px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+
+    background-image: url(../img/menu-arrow.png);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.menu__close {
+  padding-left: 7px;
+  padding-top: 4px;
+
+  &:before {
+    font-weight: 900;
+    font-size: 32px;
+    color: #16adff;
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "title" : "Romania",
+    "flag" : "ro.png",
+    "id" : 1
+  },
+  {
+    "title" : "Switzerland",
+    "flag" : "ch.png",
+    "id" : 2
+  },
+  {
+    "title" : "England",
+    "flag" : "en.png",
+    "id" : 3
+  },
+  {
+    "title" : "Russia",
+    "flag" : "ru.png",
+    "id" : 4
+  },
+  {
+    "title" : "Slovakia",
+    "flag" : "slovakia.png",
+    "id" : 5
+  },
+  {
+    "title" : "Wales",
+    "flag" : "wales.png",
+    "id" : 6
+  },
+  {
+    "title" : "Germany",
+    "flag" : "de.png",
+    "id" : 7
+  }
+]

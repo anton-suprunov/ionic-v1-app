@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/gulpfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/ads.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/article.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/cards.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/common.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/fonts.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/ionic-overwrite.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/ionic.app.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/menu.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/mixins.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/team-select.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/app.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/home.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/teams.service.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/article.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/home.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/menu.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/team-select.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/test-data/articles.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/test-data/teams.json" charset="UTF-8" />
+  </component>
+</project>

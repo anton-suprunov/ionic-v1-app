@@ -1,0 +1,30 @@
+[
+  {
+    "id" : 1,
+    "title" : "Lorem ipsum dolor sit amet adipiscing api",
+    "source" : "soccer.com",
+    "created" : 1456133507526,
+    "countries" : [1,2]
+  },
+  {
+    "id" : 2,
+    "title" : "Lorem ipsum dolor sit amet adipiscing api",
+    "source" : "soccer.com",
+    "created" : 1456133507526,
+    "countries" : [1,2]
+  },
+  {
+    "id" : 3,
+    "title" : "Lorem ipsum dolor sit amet adipiscing api",
+    "source" : "soccer.com",
+    "created" : 1456133507526,
+    "countries" : [1,2]
+  },
+  {
+    "id" : 4,
+    "title" : "Lorem ipsum dolor sit amet adipiscing api",
+    "source" : "soccer.com",
+    "created" : 1456133507526,
+    "countries" : [1,2]
+  }
+]

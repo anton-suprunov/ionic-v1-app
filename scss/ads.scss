@@ -1,0 +1,58 @@
+.ad {
+  width: auto;
+  margin: 0 auto;
+
+  &.ad_top {
+    background-image:url(../img/sponsored_banner.png);
+    background-size: 100% 75px;
+    max-width: 375px;
+    height: 75px;
+
+    @include retina(2x) {
+      background-image:url(../img/sponsored_banner@2x.png);
+    }
+
+    @include retina(3x) {
+      background-image:url(../img/sponsored_banner@3x.png);
+    }
+  }
+
+  &.ad_320 {
+    background-image:url(../img/ad_320x320.png);
+    background-size: 100% 375px;
+    max-width: 375px;
+    height: 375px;
+
+    @include retina(2x) {
+      background-image:url(../img/ad_320x320@2x.png);
+    }
+
+    @include retina(3x) {
+      background-image:url(../img/ad_320x320@3x.png);
+    }
+
+    &.ad_320_shoe {
+      background-image:url(../img/shoe-ad.jpg);
+      @include retina(2x) {
+        background-image:url(../img/shoe-ad.jpg);
+      }
+      @include retina(3x) {
+        background-image:url(../img/shoe-ad.jpg);
+      }
+    }
+
+    &.ad_320_beer {
+      background-image:url(../img/beer-ad.jpg);
+      @include retina(2x) {
+        background-image:url(../img/beer-ad.jpg);
+      }
+      @include retina(3x) {
+        background-image:url(../img/beer-ad.jpg);
+      }
+    }
+  }
+
+  &.ad_grid {
+    margin: 3px auto;
+  }
+}
