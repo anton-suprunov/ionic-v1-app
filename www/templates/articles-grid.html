@@ -1,0 +1,28 @@
+<div class="title-bar">YOUR TEAMS</div>
+
+<div class="articles-grid">
+  <div class="row" ng-repeat-start="group in articles.list | chunkBy:2">
+
+    <div class="article article__grid col" ng-repeat="article in group">
+        <span class="article__countries">
+          <span class="article__country article__country_{{articles.getCountry(country) | lowercase}}"
+                ng-repeat="country in article.countries" ng-bind="articles.getCountry(country)"></span>
+        </span>
+      <div style="background-image:url(img/article-small-1.jpg)" class="article__thumb">
+        <a href="#app/article/{{article.id}}" class="article__link"></a>
+        <div class="article__meta">
+          <h4 class="article__title" ng-bind="article.title"></h4>
+            <span class="article__source-time">
+              <a ng-href="{{article.source}}" ng-bind="article.source"></a>
+              -
+              <span am-time-ago="{{article.created}}"></span>
+            </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="ad ad_320 ad_320_shoe ad_grid" ng-repeat-end ng-if="$index % 2 == 1 && ($index != (articles.list.length / 2 - 1))"></div>
+
+</div>

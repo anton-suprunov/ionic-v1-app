@@ -1,0 +1,15 @@
+<div class="title-bar">EURO2016 PÅ WEBBEN</div>
+<div class="cards">
+  <div class="list card" ng-repeat="article in articles.list">
+    <div class="item item-body">
+      <a href="#app/article/{{article.id}}" ng-if="article.thumbnail"><img class="cards__image" ng-src="{{article.thumbnail}}"></a>
+      <h2 class="cards__title"><a href="#app/article/{{article.id}}" ng-bind="article.title"></a></h2>
+      <p class="cards__text" ng-bind="article.text"></p>
+      <p class="cards__footer">
+        <a ng-href="{{article.source}}" ng-bind="article.source"></a>
+        -
+        <span am-time-ago="{{article.created}}"></span>
+      </p>
+    </div>
+  </div>
+</div>

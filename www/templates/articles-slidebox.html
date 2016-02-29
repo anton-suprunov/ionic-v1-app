@@ -1,0 +1,20 @@
+<ion-slide-box does-continue="true">
+  <ion-slide ng-repeat="article in articles.list">
+    <div class="article article__slide">
+          <span class="article__countries">
+            <span class="article__country article__country_{{articles.getCountry(country) | lowercase}}" ng-repeat="country in article.countries" ng-bind="articles.getCountry(country)"></span>
+          </span>
+      <div style="background-image:url(img/carousel-story-1.jpg)" class="article__thumb">
+        <a href="#app/article/{{article.id}}" class="article__link"></a>
+        <div class="article__meta">
+          <h4 class="article__title" ng-bind="article.title"></h4>
+            <span class="article__source-time">
+              <a ng-href="{{article.source}}" ng-bind="article.source"></a>
+              -
+              <span am-time-ago="{{article.created}}"></span>
+            </span>
+        </div>
+      </div>
+    </div>
+  </ion-slide>
+</ion-slide-box>

@@ -9956,22 +9956,28 @@ body {
 
 .article__countries {
   position: absolute;
-  right: 13px;
+  right: 10px;
   top: 0;
   z-index: 2; }
 
 .article__country {
-  display: inline-block;
+  float: left;
+  margin-right: 3px;
   padding: 6px;
-  color: white;
+  color: #fff;
   font-size: 12px;
   font-weight: 700;
-  line-height: 17px; }
+  line-height: 17px;
+  text-transform: uppercase; }
   .article__country.article__country_spain {
     background-color: #ff7400; }
   .article__country.article__country_germany {
     background-color: #1bbd72; }
   .article__country.article__country_england {
+    background-color: #4192d2; }
+  .article__country.article__country_romania {
+    background-color: #1bbd72; }
+  .article__country.article__country_switzerland {
     background-color: #4192d2; }
 
 .article__thumb {
@@ -9993,10 +9999,13 @@ body {
 
 .article__source-time {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
-  color: white;
+  color: #fff;
   font-size: 12px;
   font-weight: 400;
   line-height: 17px; }
+  .article__source-time a {
+    color: #fff;
+    text-decoration: none; }
 
 .article__meta {
   position: absolute;

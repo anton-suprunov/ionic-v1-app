@@ -1,0 +1,25 @@
+[
+  {
+    "id" : 1,
+    "title" : "Lorem dot elit, sed do eiusmod tempor incididun",
+    "text" : "Cillum dolore eu fugiat nt cupidatat non proident, sunt in culpa qui officia deser anim id est.",
+    "source" : "uefa.com",
+    "created" : 1456133507526,
+    "thumbnail" : "img/card-image-1.jpg"
+  },
+  {
+    "id" : 2,
+    "title" : "Lorem dot elit, sed do eiusmod tempor incididun",
+    "text" : "Cillum dolore eu fugiat nt cupidatat non proident, sunt in culpa qui officia deser anim id est.",
+    "source" : "uefa.com",
+    "created" : 1456133507526
+  },
+  {
+    "id" : 3,
+    "title" : "Lorem dot elit, sed do eiusmod tempor incididun",
+    "text" : "Cillum dolore eu fugiat nt cupidatat non proident, sunt in culpa qui officia deser anim id est.",
+    "source" : "uefa.com",
+    "created" : 1456133507526,
+    "thumbnail" : "img/card-image-2.jpg"
+  }
+]

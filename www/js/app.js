@@ -6,7 +6,7 @@ angular.module('sf.services', []);
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('sf', ['ionic', 'sf.controllers', 'sf.services'])
+angular.module('sf', ['ionic', 'sf.controllers', 'sf.services', 'angularMoment', 'angular.filter'])
 
   .constant('config', {
     maxTeams : 4
@@ -39,13 +39,46 @@ angular.module('sf', ['ionic', 'sf.controllers', 'sf.services'])
         controllerAs : 'app'
       })
 
-      .state('app.home', {
+      .state('home', {
+        parent : 'app',
         url: '/home',
         views: {
           'menuContent': {
             templateUrl: 'templates/home.html',
             controller: 'HomeCtrl',
-            controllerAs : 'home'
+            controllerAs : 'home',
+            params : [1,2,3]
+          },
+          'slidebox@home' : {
+            templateUrl : 'templates/articles-slidebox.html',
+            controller : 'ArticlesCtrl',
+            controllerAs : 'articles',
+            resolve: {
+              articlesPrepService : slideboxPrepService,
+              teamsPrepService : teamsPrepService
+            },
+            params : {
+              limit : 4,
+              asd : 'asd'
+            }
+          },
+          'grid@home' : {
+            templateUrl : 'templates/articles-grid.html',
+            controller : 'ArticlesCtrl',
+            controllerAs : 'articles',
+            resolve: {
+              articlesPrepService : gridPrepService,
+              teamsPrepService : teamsPrepService
+            }
+          },
+          'cards@home' : {
+            templateUrl : 'templates/articles-cards.html',
+            controller : 'ArticlesCtrl',
+            controllerAs : 'articles',
+            resolve: {
+              articlesPrepService : cardsPrepService,
+              teamsPrepService : teamsPrepService
+            }
           }
         }
       })
@@ -59,6 +92,39 @@ angular.module('sf', ['ionic', 'sf.controllers', 'sf.services'])
             controllerAs: 'article'
           }
         }
+      })
+
+      .state('app.more', {
+        url : '/more',
+        views : {
+          'menuContent' : {
+            templateUrl : 'templates/more.html'
+          }
+        }
       });
     $urlRouterProvider.otherwise('/app/home');
   });
+
+teamsPrepService.$inject = ['Teams'];
+function teamsPrepService(Teams) {
+  return Teams.getTeams();
+}
+
+slideboxPrepService.$inject = ['Articles'];
+function slideboxPrepService(Articles) {
+  return Articles.getArticles()
+    .then(function(list) {
+      list && (list.length = 4);
+      return list;
+    })
+}
+
+gridPrepService.$inject = ['Articles'];
+function gridPrepService(Articles) {
+  return Articles.getArticles();
+}
+
+cardsPrepService.$inject = ['Articles'];
+function cardsPrepService(Articles) {
+  return Articles.getArticles('/test-data/cards.json');
+}
